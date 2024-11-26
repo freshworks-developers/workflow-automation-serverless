@@ -1,0 +1,22 @@
+{
+  "domain_name": {
+    "display_name": "Support Domain Name",
+    "description": "Enter your Freshdesk domain name (e.g., yourcompany.freshdesk.com)",
+    "type": "text",
+    "required": true
+  },
+  "api_key": {
+    "display_name": "API Key",
+    "description": "Your Freshdesk API key",
+    "type": "text",
+    "required": true,
+    "secure": true
+  },
+  "time_delay_minutes": {
+    "display_name": "Time Delay in Minutes",
+    "description": "Set the time delay for sending reminders",
+    "type": "number",
+    "required": false,
+    "default_value": 10
+  }
+}

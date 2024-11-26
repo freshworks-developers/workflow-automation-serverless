@@ -1,0 +1,24 @@
+{
+  "send_reminder_email": {
+    "schema": {
+      "method": "POST",
+      "host": "<%= iparam.domain_name %>",
+      "path": "/api/v2/tickets/<%= context.ticket_id %>/reply",
+      "headers": {
+        "Authorization": "Basic <%= encode(iparam.api_key + ':X') %>",
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  "close_ticket": {
+    "schema": {
+      "method": "PUT",
+      "host": "<%= iparam.domain_name %>",
+      "path": "/api/v2/tickets/<%= context.ticket_id %>",
+      "headers": {
+        "Authorization": "Basic <%= encode(iparam.api_key + ':X') %>",
+        "Content-Type": "application/json"
+      }
+    }
+  }
+}

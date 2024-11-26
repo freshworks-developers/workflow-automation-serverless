@@ -1,0 +1,25 @@
+{
+  "platform-version": "3.0",
+  "modules": {
+    "common": {
+      "requests": {
+        "send_reminder_email": {},
+        "close_ticket": {}
+      }
+    },
+    "support_ticket": {
+      "events": {
+        "onTicketCreate": {
+          "handler": "onTicketCreateHandler"
+        },
+        "onConversationCreate": {
+          "handler": "onConversationCreateHandler"
+        }
+      }
+    }
+  },
+  "engines": {
+    "node": "18.20.3",
+    "fdk": "9.1.2"
+  }
+}
